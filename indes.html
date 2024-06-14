@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram Desktop</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+
+
+    <div class="containe">
+
+        <aside class="side_bar">
+
+            <section class="header">
+                <button onclick="top_menus()" class="icon_btn"><img src="img/bars.svg" alt=""></button>
+                <label for="">
+                    <img src="img/magnifying-glass.svg" alt="">
+              
+    <input type="search" placeholder="Search" name="search" id="search">
+    
+</label></section>
+
+            <section class="top_menu">
+                <ul>
+                    <li><img src="img/bookmark.svg" alt=""> <span>save message</span></li>
+                    <li><img src="img/user.svg" alt=""> <span>contacts</span></li>
+                    <li><img src="img/circle-play.svg" alt=""> <span>my stories</span></li>
+                    <li><img src="img/gear.svg" alt=""> <span>settings</span></li>
+                    <li><img src="img/circle-question.svg" alt=""> <span>Telegram features</span></li>
+
+                </ul>
+            </section>
+
+            <section class="user_story">
+                <ul>
+                    <li><img src="img/face1.jpg" alt=""></li>
+                    <li><img src="img/face2.jpg" alt=""></li>
+                    <li><img src="img/face3.jpg" alt=""></li>
+                    <li><img src="img/face4.jpg" alt=""></li>
+                    <li><img src="img/face1.jpg" alt=""></li>
+                    <li><img src="img/face1.jpg" alt=""></li>
+                    <li><img src="img/face2.jpg" alt=""></li>
+                    <li><img src="img/face3.jpg" alt=""></li>
+                    <li><img src="img/face4.jpg" alt=""></li>
+                    <li><img src="img/face1.jpg" alt=""></li>
+                </ul>
+            </section>
+
+
+
+            <section class="folders">
+                <ul>
+                    <a href="#all">
+                        <li>
+                            <span> All</span>
+                        </li>
+                    </a>
+                    <a href="#porsonal">
+                        <li class="">
+                            <span> personal</span>
+                        </li>
+                    </a>
+                    <a href="#channels">
+                        <li class="">
+                            <span> Channels</span>
+                        </li>
+                    </a>
+                </ul>
+            </section>
+            <div class="contents">
+
+                <section id="all" class="list_contents">
+
+                    <button onclick="chats()" class="content_btn  ">
+                           <section>
+                            <img src="img/bookmark.svg" alt="">
+                            <span><h1>
+                                saved messages
+                            </h1>
+                            <p>reciverd last chat</p>
+                        </span>
+                           </section>
+                           <small>230</small>
+                        </button>
+                    <button onclick="chats()" class="content_btn active_content ">
+                           <section>
+                            <img src="img/face3.jpg" alt="">
+                            <span><h1>
+                                User Name
+                            </h1>
+                            <p>reciverd last chat</p>
+                        </span>
+                           </section>
+                           <small>230</small>
+                        </button>
+                    <button onclick="chats()" class="content_btn  ">
+                           <section>
+                            <img src="img/-5898697557817798887_119.jpg" alt="">
+                            <span><h1>
+                                Channel Name
+                            </h1>
+                            <p>reciverd last chat</p>
+                        </span>
+                           </section>
+                           <small>230</small>
+                        </button>
+                </section>
+
+                <section id="porsonal" class="list_contents">
+
+                    <button class="content_btn  ">
+                           <section>
+                            <img src="/" alt="">
+                            <span><h1>
+                                Person Name
+                            </h1>
+                            <p>reciverd last chat</p>
+                        </span>
+                           </section>
+                           <small>230</small>
+                        </button>
+
+                </section>
+                <section id="channels" class="list_contents">
+
+                    <button class="content_btn  ">
+                           <section>
+                            <img src="/" alt="">
+                            <span><h1>
+                                channel name
+                            </h1>
+                            <p>reciverd last post</p>
+                        </span>
+                           </section>
+                           <small>230</small>
+                        </button>
+
+                </section>
+
+            </div>
+
+
+
+
+
+
+        </aside>
+
+        <hr>
+        <div class="chat_container">
+
+            <div class="header">
+
+
+                <div class="user_detail">
+                    <button onclick="side_bars()" class="icon_btn back_nav" data-title="back">
+                        <img class="icon_img" src="img/arrow-left.svg" alt="">
+                    </button>
+
+                    <img class="user_img" src="img/face3.jpg" alt="">
+                    <button class="btn" onclick="user_infos()">
+                        <h1>user name</h1>
+                        <p>online</p>
+                    </button>
+                </div>
+
+
+
+                <div class="user_tools">
+
+                    <button class="icon_btn" data-title="search">
+                        <img src="img/magnifying-glass.svg" alt="">
+                    </button>
+
+                    <button class="icon_btn" data-title="bar">
+                        <img src="img/bars.svg" alt="">
+                    </button>
+
+                </div>
+            </div>
+
+
+
+
+            <div style="background:  url('img/bgi.png');" class="chat_box">
+
+                <div class="main_chat">
+
+                    <div class="chats_list">
+
+                        <div class="chats">
+                            <img onclick="user_infos()" class="user_img" title="name" src="img/face3.jpg" alt="">
+                            <section>
+                                <img src="img/-5898697557817798887_119.jpg" alt="">
+                                <p>Lorem <a href=""> http://127.0.0.1:3000/indes.html?#channels</a> ipsum dolor sit amet consectetur adipisicing elit. Officia, explicabo. Nesciunt quasi, voluptatum quisquam debitis optio quidem ipsum non vel natus cupiditate
+                                    error hic laborum provident quam lum iste repellat?</p>
+                                <small>20/12/12</small>
+                            </section>
+                        </div>
+
+
+
+                        <div class="chats_to ">
+                            <img class="user_img" title="name" src="img/face3.jpg" alt="">
+                            <section>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                                <small>20/12/12</small>
+                            </section>
+                        </div>
+
+
+
+
+                        <div class="gaps"></div>
+                    </div>
+
+
+                    <div class="chat_writer_container">
+
+                        <div class="chat_writer">
+                            <form action="">
+
+                                <button class="icon_btn">
+                                <img src="img/link.svg" alt="">
+                            </button>
+
+                                <textarea placeholder="Message" name="" id=""></textarea>
+                                <label for="send_files">
+                              
+                            <button class="icon_btn">
+                                <img src="img/circle-right.svg" alt="">
+                            </button>  </label>
+
+
+                            </form>
+
+                            <button class="icon_btn bgc_btn mic_btn">
+                                <img src="img/microphone.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="user_info_container">
+            <div class="header">
+
+                <button onclick="user_infos()" class="icon_btn"><img src="img/xmark.svg" alt=""></button>
+                <span>user name</span>
+
+            </div>
+
+            <div class="user_image">
+                <img src="img/face3.jpg" alt="">
+
+            </div>
+            <ul>
+                <li><img src="img/phone.svg" alt=""><span>+251923213324</span></li>
+                <li><img src="img/at.svg" alt=""><span>@username</span></li>
+                <li><img src="img/circle-info.svg" alt=""><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores perspiciatis magni mollitia? </span></li>
+            </ul>
+
+        </div>
+
+
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
